@@ -134,7 +134,9 @@ body {
 	height: 64px;
 	line-height: 64px;
 }
-
+/* Problem-1: sidebar hamburger menu
+	left side border look like some gap.
+*/
 .sidebar {
 	width: 5.73%;
 	height: 100vh;
