@@ -19,11 +19,14 @@
 </head>
 
 <body>
-    <header class="hero-section">
-        <nav class="navbar">
+    <!-- Header Section Start -->
+    <header>
+        <nav class="navbar" id="navbar">
             <div class="logo">
-                <a href="#"><img src="./images/logo.png" alt="logo"></a>
+                <a href="#"><img src="./images/logo2.png" alt="logo"></a>
             </div>
+
+            <!-- Main Menu -->
             <div id="main-menu" class="main-menu">
                 <ul>
                     <li><a href="#">About</a></li>
@@ -42,13 +45,17 @@
                 <button>get in touch</button>
             </div>
         </nav>
+    </header>
+    <!-- Header Section End -->
 
+    <!-- Hero Section Start -->
+    <section class="hero-section" id="hero-area">
         <div class="hero-content">
             <div class="content">
                 <p class="intro">Introducing</p>
                 <h1 class="title">EXCEED</h1>
                 <p class="sub-title">A new type of partner</p>
-                <button>ABOUT US</button>
+                <button class="btn">ABOUT US</button>
             </div>
         </div>
 
@@ -80,24 +87,86 @@
                     transform="translate(-1675.978 -955.814)" />
             </svg>
         </div>
+    </section>
+    <!-- Hero Section End -->
 
-        <aside class="sidebar">
-            <div id="hamburger-menu" class="hamburger-menu">
-                <img src="./images/hamburger-menu.png" alt="hamburger menu">
-            </div>
-            <div class="page-count">
-                <div class="page-count-active">01</div>
-                <div>02</div>
-                <div>03</div>
-                <div>04</div>
-                <div>05</div>
-            </div>
-            <div class="scroll-msg">
-                <p>SCROLL DOWN <img src="./images/scroll-dwon-icon.png" alt=""></p>
-            </div>
-        </aside>
-    </header>
+    <!-- Sidebar Start -->
+    <aside class="sidebar">
+        <div id="hamburger-menu" class="hamburger-menu">
+            <img src="./images/hamburger-menu.png" alt="hamburger menu">
+        </div>
+        <div class="page-count">
+            <div><a href="#hero-area">01</a></div>
+            <div><a href="#about-area">02</a></div>
+            <div class="page-count-active"><a href="#services-area">03</a></div>
+            <div><a href="#about-area">04</a></div>
+            <div><a href="#about-area">05</a></div>
+        </div>
+        <div class="scroll-msg">
+            <p>SCROLL DOWN <img src="./images/scroll-dwon-icon.png" alt=""></p>
+        </div>
+    </aside>
+    <!-- Sidebar End -->
 
+    <!-- About Section Start -->
+    <section class="about-section" id="about-area">
+        <div class="about-content">
+            <div class="section-title-info">
+                <h2 class="title">About Exceed</h2>
+                <div class="sub-title">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p> Pellentesque venenatis metus at efficitur efficitur.</p>
+                </div>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque venenatis metus at efficitur
+                efficitur. Quisque pellentesque ligula nulla, et gravida diam auctor ut. Sed ac diam felis. Nam at
+                mollis enim, eget rhoncus diam. Etiam dignissim neque sed enim placerat, vitae tempor justo euismod.
+                Maecenas turpis ex, ornare eu tellus eu, rhoncus pretium nisl. Maecenas lectus nisi, dapibus sit amet
+                orci et, tincidunt sagittis nisi.
+            </p>
+
+            <br>
+
+            <p>
+                Vestibulum sagittis augue purus, at finibus risus tincidunt et. Nullam quis tempor magna, a malesuada
+                est. Suspendisse lobortis libero ut orci euismod, at consequat felis consectetur. Ut ut dolor sed nisi
+                malesuada faucibus eget pellentesque lacus.
+            </p>
+
+            <button class="btn">ABOUT US</button>
+        </div>
+        <div class="about-image">
+            <img src="./images/about-image.png" alt="about image">
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Services Section Start -->
+    <section class="services-section" id="services-area">
+        <div class="section-title-info">
+            <h2 class="title">our services</h2>
+            <div class="sub-title">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+
+        <div class="services-card">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+
+        <div class="services-providing">
+            <h3 class="services-providing-text">Providing Reliable Data-Centre Support Solutions</h3>
+            <button class="btn">get started</button>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Main JS -->
     <script src="./js/main.js"></script>
 </body>
 
