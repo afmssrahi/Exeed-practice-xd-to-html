@@ -1,5 +1,8 @@
 const mainMenu = document.getElementById('main-menu');
 const navBar = document.getElementById('navbar');
+const sections = document.querySelectorAll('section');
+const pageCountNumbers = document.querySelectorAll('.page-count a div');
+console.log(pageCountNumbers);
 
 // fixing auto toggle problem
 let mainMenuToggle = true;
@@ -26,4 +29,21 @@ window.addEventListener('scroll', () => {
 			navBar.classList.remove('navbar-background');
 		}
 	}
+
+	let current = '';
+	sections.forEach((section) => {
+		const sectionTop = section.offsetTop;
+		const sectionHeight = section.clientHeight;
+		if (window.scrollY >= sectionTop - sectionHeight / 3) {
+			current = section.getAttribute('id');
+		}
+	});
+
+	pageCountNumbers.forEach((pageCount) => {
+		pageCount.classList.remove('page-count-active');
+
+		if (pageCount.classList.contains(current)) {
+			pageCount.classList.add('page-count-active');
+		}
+	});
 });
